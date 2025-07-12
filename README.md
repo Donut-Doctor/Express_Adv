@@ -19,31 +19,6 @@ A simple blogging platform backend built with **Express.js** and **MongoDB**.
 
 ---
 
-## File Structure
-
-Express_Adv/
-├── server.js
-├── package.json
-├── .gitignore
-├── README.md
-├── .env.example
-├── postman_collection.json
-│
-├── routes/
-│ ├── basicRoutes.js
-│ ├── uploadRoutes.js
-│ ├── postRoutes.js
-│ └── quoteRoutes.js
-│
-├── models/
-│ └── Post.js
-│
-├── middleware/
-│ └── logger.js
-└── uploads/ (auto-created, gitignored)
-
----
-
 ## Setup
 
 1. **Install dependencies**
