@@ -1,0 +1,114 @@
+{
+  "info": {
+    "name": "Backend",
+    "_postman_id": "b1d9a187-6e99-472e-9a21-b0ce6c169999",
+    "description": "Postman collection for testing Express",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/", "protocol": "http", "host": ["localhost"], "port": "3000", "path": [""] }
+      }
+    },
+    {
+      "name": "GET /about",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/about", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["about"] }
+      }
+    },
+    {
+      "name": "POST /upload (single file)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "file", "type": "file", "src": "" }
+          ]
+        },
+        "url": { "raw": "http://localhost:3000/upload", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["upload"] }
+      }
+    },
+    {
+      "name": "POST /upload/multiple",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "files", "type": "file", "src": "", "disabled": false }
+          ]
+        },
+        "url": { "raw": "http://localhost:3000/upload/multiple", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["upload", "multiple"] }
+      }
+    },
+    {
+      "name": "POST /posts",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"My First Post\",\n  \"body\": \"This is a test blog post.\",\n  \"category\": \"travel\"\n}"
+        },
+        "url": { "raw": "http://localhost:3000/posts", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["posts"] }
+      }
+    },
+    {
+      "name": "GET /posts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/posts", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["posts"] }
+      }
+    },
+    {
+      "name": "GET /quote",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/quote", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["quote"] }
+      }
+    },
+    {
+      "name": "GET /quote/joke",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/quote/joke", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["quote", "joke"] }
+      }
+    },
+    {
+      "name": "GET /quote/weather/:city",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/quote/weather/delhi",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["quote", "weather", "delhi"]
+        }
+      }
+    },
+    {
+      "name": "GET /invalid",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:3000/invalid", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["invalid"] }
+      }
+    }
+  ]
+}
