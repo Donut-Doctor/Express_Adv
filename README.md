@@ -1,4 +1,4 @@
- 🧭 Express Server
+Express Server
 
 A simple blogging platform backend built with **Express.js** and **MongoDB**.
 
@@ -19,7 +19,7 @@ A simple blogging platform backend built with **Express.js** and **MongoDB**.
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 Express_Adv/
 ├── server.js
@@ -44,7 +44,7 @@ Express_Adv/
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 1. **Install dependencies**
 
